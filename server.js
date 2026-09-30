@@ -133,6 +133,6 @@ wss.on('connection',(ws)=>{
   });
 });
 
-app.get('*',(req,res)=>res.sendFile(path.join(__dirname,'public','index.html')));
+app.get('*',(req,res)=>res.sendFile(path.join(__dirname,'index.html')));
 const port=Number(process.env.PORT||3000);
 server.listen(port,()=>console.log(`PrivMessenger online: http://localhost:${port}`));
